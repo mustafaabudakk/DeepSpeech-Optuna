@@ -1,6 +1,6 @@
 # Speech to Text with DeepSpeech
 
-We intervened this project for hyperparameter tuning and used <b>train_batch_size</b>, <b>dropout_rate</b>, <b>learning_rate</b> and <b>n_hidden</b> for this purpose. So as not to spoil the original code, we created a new <b>optuna_hp.py</b> on the same code and we had to change some methods and add the necessary code pieces for optuna optimization.
+We intervened this project for hyperparameter tuning and for now, only <b>train_batch_size</b>, <b>dropout_rate</b>, <b>learning_rate</b> and <b>n_hidden</b> are used. So as not to spoil the original code, we created a new <b>optuna_hp.py</b> on the same code and we had to change some methods and add the necessary code pieces for optuna optimization.
 
 Some changes had to be made on checkpoint_dir in order to eliminate the errors encountered with the Optuna integration. In order to resolve these, you must enter the appropriate value for your machine in the <b>checkpoint_root_dir</b> variable in the <b>setup_dirs</b> method.
 
