@@ -4,7 +4,7 @@ We intervened this project for hyperparameter tuning and for now, only <b>train_
 
 You can change the value ranges in <b>hps_create_optimizer</b> as you wish.
 
-It is very important to choose train_batch_size and n_hidden correctly and change it in the file to avoid GPU issues.
+<b>It is very important to choose train_batch_size and n_hidden correctly and change it in the file to avoid GPU issues.</b>
  
 Some changes had to be made on checkpoint_dir in order to eliminate the errors encountered with the Optuna integration. In order to resolve these, you must enter the appropriate value for your machine in the <b>checkpoint_root_dir</b> variable in the <b>setup_dirs</b> method.
 
