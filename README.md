@@ -2,6 +2,8 @@
 
 We intervened this project for hyperparameter tuning and for now, only <b>train_batch_size</b>, <b>dropout_rate</b>, <b>learning_rate</b> and <b>n_hidden</b> are used. So as not to spoil the original code, we created a new <b>optuna_hp.py</b> on the same code and we had to change some methods and add the necessary code pieces for optuna optimization.
 
+You can change the range of values within the method as you wish.
+
 Some changes had to be made on checkpoint_dir in order to eliminate the errors encountered with the Optuna integration. In order to resolve these, you must enter the appropriate value for your machine in the <b>checkpoint_root_dir</b> variable in the <b>setup_dirs</b> method.
 
 <h3> <b>Note:</b> </h3> In this study, the <b>distributed Optuna - multi GPU</b> relationship was used and the codes were updated for this purpose but suitable for single and multiple. For this non-purpose use, <b>create_study</b> may be modified as needed.
